@@ -19,7 +19,7 @@
             <td>{{ $car->manufacture_year }}</td>
             <td>{{ $car->car_price }}</td>
             <td>{{ $car->fuel_type }}</td>
-            <td>{{ $car->on_sale }}</td>
+            <td>{{ $car->on_sale ? 'Yes' : 'No' }}</td>
                 <td width="120">
                     {!! Form::open(['route' => ['cars.destroy', $car->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

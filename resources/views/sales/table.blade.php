@@ -2,6 +2,7 @@
     <table class="table" id="sales-table">
         <thead>
         <tr>
+		<th>Sale id</th>
             <th>Sale Price</th>
         <th>Sale Date</th>
         <th>Customer Id</th>
@@ -13,7 +14,8 @@
         <tbody>
         @foreach($sales as $sale)
             <tr>
-                <td>{{ $sale->sale_price }}</td>
+			<td>{{ $sale->id }}</td>
+            <td>{{ $sale->sale_price }}</td>
             <td>{{ $sale->sale_date }}</td>
             <td>{{ $sale->customer_id }}</td>
             <td>{{ $sale->customer_name }}</td>
