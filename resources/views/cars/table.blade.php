@@ -22,7 +22,7 @@
             <td>{{ $car->fuel_type }}</td>
             <td>{{ $car->on_sale ? 'Yes' : 'No' }}</td>
 			 <td>
-            <img class="img-responsive center-block" height="200" width="100" 
+            <img class="img-responsive center-block" height="100" width="100" 
                 src="data:image/jpeg;base64,{{$car->carimage}}">
 			</td>
                 <td width="120">
