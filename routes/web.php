@@ -26,3 +26,12 @@ Route::resource('cars', App\Http\Controllers\carController::class);
 
 
 
+
+
+Route::resource('shifts', App\Http\Controllers\shiftController::class);
+
+
+Route::resource('customers', App\Http\Controllers\customerController::class);
+
+
+Route::resource('sales', App\Http\Controllers\saleController::class);
