@@ -9,6 +9,9 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use App\Models\Customer as Customer;
+
+
 
 class saleController extends AppBaseController
 {
@@ -42,7 +45,13 @@ class saleController extends AppBaseController
      */
     public function create()
     {
-        return view('sales.create');
+       //Find all members from the DB and return as an array of Member.php objects
+		 $customers = Customer::all();
+		 //Find all courts from the DB and return as an array of Court.php objects
+		 
+		 //return the bookings.create view with $members and $courts as view variables
+		 return view('sales.create')->with('customers',$customers);
+
     }
 
     /**

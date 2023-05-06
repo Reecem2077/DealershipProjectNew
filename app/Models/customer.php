@@ -72,4 +72,10 @@ class customer extends Model
     {
         return $this->hasMany(\App\Models\Sale::class, 'customer_id');
     }
+	
+	public function __toString()
+    {
+        return "customer-" . $this->id;
+    }
+	
 }

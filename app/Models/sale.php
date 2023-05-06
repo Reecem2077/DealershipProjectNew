@@ -73,3 +73,6 @@ class sale extends Model
         return $this->belongsTo(\App\Models\Customer::class, 'customer_id');
     }
 }
+
+
+	
