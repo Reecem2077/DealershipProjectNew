@@ -29,4 +29,9 @@
         {!! Form::checkbox('on_sale', '1', null, ['class' => 'form-check-input']) !!}
         {!! Form::label('on_sale', 'On Sale', ['class' => 'form-check-label']) !!}
     </div>
+	
+	<div class="form-group col-sm-6">
+		{!! Form::label('carimage', 'Car Image:') !!}
+		{!! Form::file('carimage', null, ['class' => 'form-control','id'=>'carimage']) !!}
+	</div>	
 </div>

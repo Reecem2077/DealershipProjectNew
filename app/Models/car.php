@@ -61,7 +61,8 @@ class car extends Model
         'manufacture_year' => 'nullable|string|max:30',
         'car_price' => 'nullable|numeric',
         'fuel_type' => 'nullable|string|max:20',
-        'on_sale' => 'required|boolean'
+        'on_sale' => 'required|boolean',
+		'carimage' => 'nullable'
     ];
 
     

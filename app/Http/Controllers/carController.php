@@ -57,6 +57,9 @@ class carController extends AppBaseController
         $input = $request->all();
 
         $car = $this->carRepository->create($input);
+		
+		$car->carimage = base64_encode(file_get_contents($request->carimage));
+        $car->save();
 
         Flash::success('Car saved successfully.');
 
