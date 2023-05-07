@@ -27,8 +27,7 @@ class employee extends Model
 
 
 
-
-    public $fillable = [
+	public $fillable = [
         'firstname',
         'surname',
         'employeetype',
@@ -62,13 +61,4 @@ class employee extends Model
 	
 	
 	
-	public function user()
-{
-    return $this->belongsTo(\App\User::class,'userid','id');
-}
-
-  $loggedInUser = Auth::user ( ( );
- echo "Employee Name : "$loggedInUser->employee;
- echo "Employee Type  : "SloggedInUser->employee->employeetype;
-  
 }
