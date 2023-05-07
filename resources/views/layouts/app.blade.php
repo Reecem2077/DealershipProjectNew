@@ -16,7 +16,8 @@
 				<li><a href="{{ route('customers.index') }}">Customers</a></li>
 				<li><a href="{{ route('shifts.index') }}">Shifts</a></li>
 				<li><a href="{{ route('sales.index') }}">Sales</a></li>
-            </ul> 
+            </ul>
+			@include('layouts.navAuth')
         </nav> 
         <div id="page-content-wrapper"> 
             <div class="container-fluid"> 

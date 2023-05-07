@@ -2,6 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +30,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [App\Http\Controllers\Auth\LoginController::class, 'login']);
+Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+Auth::routes();
 
 Route::resource('employees', App\Http\Controllers\employeeController::class);
 
@@ -35,3 +53,6 @@ Route::resource('customers', App\Http\Controllers\customerController::class);
 
 
 Route::resource('sales', App\Http\Controllers\saleController::class);
+
+?>
+
