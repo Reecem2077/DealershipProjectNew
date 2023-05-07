@@ -1,5 +1,6 @@
 
 <ul class="nav navbar-nav pull-right">
+<link rel="stylesheet" type="text/css" href="nav.css" />
     @if (Auth::guest())
         <li>
             <a href="{{route('register')}}">Register
