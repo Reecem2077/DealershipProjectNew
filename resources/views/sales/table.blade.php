@@ -1,6 +1,6 @@
 <div class="table-responsive">
     <table class="table" id="sales-table">
-        <thead>
+        <thead style="background-color: #FFA500; color: white;">
         <tr>
 		<th>Sale id</th>
             <th>Sale Price</th>

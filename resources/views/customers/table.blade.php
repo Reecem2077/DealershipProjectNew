@@ -1,6 +1,6 @@
 <div class="table-responsive">
     <table class="table" id="customers-table">
-        <thead>
+        <thead style="background-color: #4CAF50; color: white;">
         <tr>
             <th>First Name</th>
         <th>Last Name</th>

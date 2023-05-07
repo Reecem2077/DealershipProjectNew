@@ -1,6 +1,6 @@
 <div class="table-responsive">
     <table class="table" id="shifts-table">
-        <thead>
+        <thead style="background-color: #FFCF40; color: white;">
         <tr>
 		<th>Shift Id</th>
             <th>Employee Id</th>

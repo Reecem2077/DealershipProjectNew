@@ -1,6 +1,6 @@
 <div class="table-responsive">
     <table class="table" id="cars-table">
-        <thead>
+        <thead style="background-color: #674EA7; color: white;">
         <tr>
 		<th>Car id</th>
 		<th>Car Name</th>
