@@ -42,7 +42,7 @@ Route::resource('employees', App\Http\Controllers\employeeController::class);
 Route::resource('cars', App\Http\Controllers\carController::class);
 
 
-
+Route::get('/loggedInEmployee', 'EmployeeController@getLoggedInEmployeeDetails');
 
 
 

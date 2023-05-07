@@ -9,6 +9,7 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use Illuminate\Support\Facades\Auth;
 
 class employeeController extends AppBaseController
 {
@@ -153,4 +154,20 @@ class employeeController extends AppBaseController
 
         return redirect(route('employees.index'));
     }
+	
+	public function getLoggedInEmployeeDetails()
+{
+
+    if (!Auth::guest()){
+        $user = Auth::user();
+        echo "Userid is " . $user->id;    
+        echo "Employee id is " . $user->employee->id;
+        echo "The employee's name is " . $user->employee->firstname . " ";
+        echo $user->employee->surname;
+        echo "The employee is a " . $user->employee->employeetype;
+    }
+    else {
+        echo "not logged in ";
+    }
+}
 }

@@ -59,6 +59,16 @@ class employee extends Model
         'employeetype' => 'nullable|string|max:20',
         'dateofbirth' => 'nullable'
     ];
+	
+	
+	
+	public function user()
+{
+    return $this->belongsTo(\App\User::class,'userid','id');
+}
 
-    
+  $loggedInUser = Auth::user ( ( );
+ echo "Employee Name : "$loggedInUser->employee;
+ echo "Employee Type  : "SloggedInUser->employee->employeetype;
+  
 }
