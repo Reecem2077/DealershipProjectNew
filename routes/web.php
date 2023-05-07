@@ -48,7 +48,7 @@ Route::resource('cars', App\Http\Controllers\carController::class);
 
 Route::get('/loggedInEmployee', 'EmployeeController@getLoggedInEmployeeDetails');
 
-
+Route::get('/calendar/display', 'App\Http\Controllers\calendarController@display')->name('calendar.display');
 
 Route::resource('shifts', App\Http\Controllers\shiftController::class);
 
